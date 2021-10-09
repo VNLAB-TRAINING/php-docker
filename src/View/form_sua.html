@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="C_Student.php" method="POST">
+        <table style="border:1px solid black; margin-left:auto; margin-right:auto;">
+            <tr>
+                <th>Mã học sinh</th>
+                <?php
+                   echo '<td><input type="text" name="id" value="'.$student->id.'" readonly></td>';
+                ?>
+            </tr>
+            <tr>
+                <th>Họ và tên</th>
+                <?php
+                   echo '<td><input type="text" name="name" value="'.$student->name.'"></td>';
+                ?>
+            </tr>
+            <tr>
+                <th>Tuổi</th>
+                <?php
+                   echo '<td><input type="text" name="age" value="'.$student->age.'"></td>';
+                ?>
+            </tr>
+            <tr>
+                <th>Trường học</th>
+                <?php
+                   echo '<td><input type="text" name="university" value="'.$student->university.'"></td>';
+                ?>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="Sửa" name="submit3"><a href='javascript: history.back()'><input type="button" value="Hủy"></a></td>
+                <td></td>
+            </tr>
+        </table>
+    </form> 
+</body>
+</html>
